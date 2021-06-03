@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title> Wellness Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+            <div class="nav-link-wrapper">
+                <a href="about.html">About</a>
+            </div>
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <div>Cosmic Wizards</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+            
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/photo-1490645935967-10de6ba17061.jpg)">
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="">
+                            </div>
+                            <div class="subtitle">
+                                Check out some unique healthy diets here! 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/photo-1523901839036-a3030662f220.jpg)">
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="">
+                            </div>
+                            <div class="subtitle">
+                                A quick and helpful guide on how to put on muscle weight and lose excessive fat! 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/photo-1529946825183-536c6317f60e.jpg)">
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="">
+                            </div>
+                            <div class="subtitle">
+                                Some mental health facts and how you can get help. 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/photo-1532938911079-1b06ac7ceec7.jpg)">
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="">
+                            </div>
+                            <div class="subtitle">
+                                For people looking to improve overall health!
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/photo-1584735935682-2f2b69dff9d2.jpg)">
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="">
+                            </div>
+                            <div class="subtitle">
+                                Workouts and exercises for people with and without a gym!
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/photo-1490645935967-10de6ba17061.jpg)">
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="">
+                            </div>
+                            <div class="subtitle">
+                                Check out some unique healthy diets here! 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems= document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover',() => {
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout',() => {
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
