@@ -1,0 +1,189 @@
+#Name of file stlyes.css
+#Purpose of file Give the home page structure, as well as the navbar
+#Version and date (these must reflect the most recent
+changes) As of May 31, 2021 
+#Author(s) Nikita Lupashku, Jared Jackson, Zoey Bennett
+#Dependencies- CSS
+/*Master Styles*/
+body {
+    margin:0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Nav Styles*/
+.nav-wrapper{
+    display: flex; 
+    justify-content: space-between;
+    padding: 38px;
+}
+.left-side {
+    display: flex;
+}
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom:1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color:black;
+}
+
+/*Portfolio Styles*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height:300px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+/*Needs to be more specific with selector*/
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 2000;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 2000;
+    color: lightseagreen;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(80%);
+}
+
+#for pages
+<style>
+    body {
+      background-color: #f4f3ee;
+  
+    }
+  
+    #demobox {
+      background-color: #84a98c;
+      padding: 10px ;
+    }
+  
+  
+  
+    p, h1, h2 {
+      text-align: center;
+    }
+  
+    ul {
+      list-style-position: inside;
+    }
+  
+    #info {
+      font-family: Garamond;
+      font-size: 25px;
+      margin: 20px
+    }
+  
+    #subhead {
+      font-family: Garamond;
+      font-size: 30px;
+      font-weight: bold;
+      margin: 30px;
+    }
+  
+    #subhead2 {
+      font-family: Garamond;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: left;
+      margin: 20px;
+  
+    }
+  
+  
+  
+    #headers {
+      text-align: center;
+      font-family: Georgia;
+      color: #f4f3ee;
+      font-weight: 700;
+      letter-spacing: 5px;
+      margin: 70px;
+    }
+  
+    #bulletpoints {
+      font-size: 20px;
+      text-align: left;
+      font-family: Garamond;
+      margin: 20px;
+    }
+  
+  
+    #diet_image {
+      margin: 30px;
+    }
+  
+    #diet_image2 {
+      margin: 30px;
+    }
+  
+  
+  
+  
+    div {
+      text-align: center;
+    }
+  
+    .header {
+      color: green;
+    }
+    </style>
