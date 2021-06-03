@@ -1,0 +1,314 @@
+#Name of file dietary.html
+#Purpose of file Provide the dietary page with information, text, links, the navbar, and a calculator 
+#Version and date (these must reflect the most recent
+changes) As of May 31, 2021 
+#Author(s) Ryan Daniels, Nikita Lupashku
+#Dependencies- HTML, CSS, JavaScript
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QuestWell</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+  body {
+    background-color: #f4f3ee;
+
+  }
+
+  #demobox {
+    background-color: #84a98c;
+    padding: 10px ;
+  }
+
+
+
+  p, h1, h2 {
+		text-align: center;
+	}
+
+	ul {
+		list-style-position: inside;
+	}
+
+	#info {
+		font-family: Garamond;
+		font-size: 25px;
+	}
+
+  #subhead {
+		font-family: Garamond;
+		font-size: 30px;
+    font-weight: bold;
+	}
+
+  #subhead2 {
+		font-family: Garamond;
+		font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+
+	}
+
+
+
+	#headers {
+		text-align: center;
+		font-family: Georgia;
+		color: #f4f3ee;
+    font-weight: 700;
+    letter-spacing: 5px;
+	}
+
+	#bulletpoints {
+		font-size: 20px;
+		text-align: left;
+    font-family: Garamond;
+	}
+
+
+  #diet_image {
+
+  }
+
+  div {
+    text-align: center;
+  }
+
+	.header {
+		color: green;
+	}
+  </style>
+</head>
+<body style="margin: 150px;"> <!-- This style here makes the header smaller ~Jared -->
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">QuestWell</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Dietary<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="dietary.html">Vegan</a></li>
+          <li class="active"><a href="dietary.html">Vegatarian</a></li>
+          <li class="active"><a href="dietary.html">Calorie Calculator</a></li>
+        </ul>
+      </li>
+      <li><a href="mental.html">Mental Health</a></li>
+      <li><a href="physical.html">Physical Health</a></li>
+      <li><a href="spirit.html">Spiritual Wellbeing</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</nav>
+        <br>
+        <div id=demobox><h1 id="headers">Dietary</h1></div><br>
+        <p id="info">
+             This is the Dietary Section of QuestWell. This part of the website is the promotion of different tasty lifestyles. Here we well three different kinds of healthy diets.
+        </p>
+        <div>
+          <img id="diet_image"src= "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="hi" width="500" height="333">
+        </div>
+        <br />
+        <br />
+
+        <p id="subhead"><b>What are Plant-Based Diets?</b></p>
+        <p id="info">Plant-Based Diets are kinds of diets that rely on mainly the consumption of plants rather than animals.</p>
+        <br />
+        <br />
+
+        <p id="subhead"><b>Why would this Diet be for you?</b></p>
+        <ul>
+          <li id="bulletpoints">Easier weight management</li>
+          <li id="bulletpoints">Eating plants based can decrease risks of depression, anxiety, and brain fog</li>
+          <li id="bulletpoints">Plant based diets have been linked to higher a lifespan</li>
+          <li id="bulletpoints">Plants based diets leave a lighter environment footprint</li>
+        </ul><br><br>
+        <p id="subhead"><b>Cons of the Plant-Based Diet</b></p>
+          <ul>
+            <li id="bulletpoints">Potential for nutrient deficiencies</li>
+            <li id="bulletpoints">You have to prepare your food more often</li>
+            <li id="bulletpoints">Adapting to the new diet might be challenging and time consume</li>
+          </ul><br><br>
+    <div id=demobox><h2 id="headers">Vegetarian Diet</h2></div><br>
+
+    <img src= "https://images.unsplash.com/photo-1533622597524-a1215e26c0a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="hi" width="500" height="333">
+
+    <img src= "https://images.unsplash.com/photo-1520072959219-c595dc870360?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1453&q=80" alt="hi" width="500" height="333" align='right'>
+    <br />
+    <br />
+
+
+    <p id="subhead"><b>What is Vegetarianism?</b></p>
+    <p id='info'>Vegetarianism is a diet that practices the avoidance of meat consumption</p>
+    <br />
+    <br />
+
+    <p id="subhead">What can Vegetarians not eat?</p>
+    <p id='info'>In short, it depend of the kind of vegetarian: Lacto-ovo-vegetarian diet: Eliminates meat, fish and poultry but allows eggs and dairy products.</p>
+    <br />
+    <br />
+
+          <ul>
+            <li id="bulletpoints"><b>Lacto-vegetarian diet</b>: Eliminates meat, fish, poultry and eggs but allows dairy products.</li>
+            <li id="bulletpoints"><b>Lacto-vegetarian diet</b>: Eliminates meat, fish, poultry and eggs but allows dairy products.</li>
+            <li id="bulletpoints"><b>Ovo-vegetarian diet</b>: Eliminates meat, fish, poultry and dairy products but allows eggs</li>
+          </ul><br>
+      <p id="subhead"><b>Benefits to specifically vegetarianism</b>
+      <ul>
+            <li id="bulletpoints">Possibly causes weight loss</li>
+            <li id="bulletpoints">Boost heart health</li>
+            <li id="bulletpoints">May stabilize blood sugar </li>
+      </ul><br><br>
+    <div id=demobox><h2 id="headers">Vegan Diet</h2></div>
+    <br />
+
+    <img src= "https://images.unsplash.com/photo-1598449526978-cd11daa040c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="hi" width="500" height="333">
+    <img src= "https://images.unsplash.com/photo-1619957666462-23c135cb215b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="hi" width="500" height="333" align='right'>
+
+
+
+
+
+    <h2 id='subhead'>Learn about Veganism </h2>
+    <p id="info">Veganism is the practice of removing all animal derived products. This includes diet and lifestyle. This section will only cover the diet portion of veganism. For more research on veganism as a whole, please go to this <a href = "https://www.adaptt.org/resources/what-vegans-eat-wear-and-use.html#:~:text=Proper%20vegans%20neither%20wear%20nor,that%20is%20upholstered%20in%20leather.">website</a></p><br>
+    <p id="subhead"><b>What Vegans Can’t Eat:</b></p>
+      <ul>
+        <li id="bulletpoints">Beef, pork, lamb, and other red meat</li>
+		<li id="bulletpoints">Fish or shellfish such as crabs, clams, and mussels</li>
+		<li id="bulletpoints">Eggs</li>
+		<li id="bulletpoints">Cheese, butter</li>
+		<li id="bulletpoints">Milk, cream, ice cream, and other dairy products</li>
+		<li id="bulletpoints">Mayonnaise (because it includes egg yolks)</li>
+		<li id="bulletpoints">Honey</li>
+      </ul><br>
+
+    <div id=demobox><h2 id="headers">Food guide and tips for Vegans and Vegetarians</h2></div>
+    <br />
+    <img src= "https://images.unsplash.com/photo-1598449526978-cd11daa040c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="hi" width="400" height="233" align='right'>
+      <p id="subhead2"><b>Meat Substitutes </b></p>
+      <ul>
+        <li id="bulletpoints">Tofu</li>
+		<li id="bulletpoints">Beans and sprouts </li>
+		<li id="bulletpoints">Nuts</li>
+		<li id="bulletpoints">Potatoes</li>
+		<li id="bulletpoints">Jackfruit</li>
+		<li id="bulletpoints">Cauliflower</li>
+		<li id="bulletpoints">Store-bought vegan beef and chicken</li>
+      </ul><br>
+      <p id="subhead2"><b>Dairy substitutes for Vegans and Vegetarians :</b></p>
+
+
+      <ul>
+        <li id="bulletpoints">Almond milk</li>
+		<li id="bulletpoints">Oat milk</li>
+		<li id="bulletpoints">Coconut milk- Replacement for heavy creams</li> <img src= "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=662&q=80" alt="hi" width="400" height="475" align='right'>
+		<li id="bulletpoints">Soy milk</li>
+		<li id="bulletpoints">Vegan cheeses</li>
+      </ul><br>
+      <p id="subhead2"><b>Grains</b></p>
+        <ul>
+			<li id="bulletpoints">Oats</li>
+			<li id="bulletpoints">Brown and white rice</li>
+			<li id="bulletpoints">Quinoa</li>
+			<li id="bulletpoints">Barley</li>
+			<li id="bulletpoints">Millet</li>
+      </ul><br>
+      <p id="subhead2"><b>Proteins that benefits both Vegans and Vegetarians </b></p>
+        <ul>
+          <li id="bulletpoints">Nuts - cashews, almonds, walnuts, pecans</li>
+		  <li id="bulletpoints">Chickpeas, blackbeans, pinto beans, ect</li>
+		  <li id="bulletpoints">Lentils</li>
+		  <li id="bulletpoints">Nutritional yeast</li>
+		  <li id="bulletpoints">Hempseed</li>
+		  <li id="bulletpoints">Chia seeds</li>
+        </ul><br>
+    </p>
+    <div id=demobox><h2 id="headers">Calorie Calculator</h2></div>
+    </br>
+    <form id = "calories">
+      <div class="form-group">
+        <label>Age: </label>
+        <input type = "number "id="age" placeholder = "21">
+      </div>
+      <div class="form-group">
+        <label>Height(in inches): </label>
+        <input type = "number" id="height" placeholder="69">
+      </div>
+      <div class="form-group">
+        <label>Weight(in lbs):</label>
+        <input type = "number" id="weight" placeholder="169">
+      </div>
+      <div class="form-group row">
+        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+          <select class="custom-select col-sm-10" id="gender">
+            <option selected value="1">Male</option>
+            <option value="2">Female</option>
+          </select>
+      </div>
+     </br>
+     <div class="form-group row">
+      <legend class="col-form-label col-sm-2 pt-0">Intensity</legend>
+        <select class="custom-select col-sm-10" id="intensity">
+          <option selected value="1">Sedentary (little or no exercise)</option>
+          <option value="2">Lightly active (light exercise/sports 1-3 days/week)</option>
+          <option value="3">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+          <option value="4">Very active (hard exercise/sports 6-7 days a week)</option>
+          <option value="5">Extra active (very hard exercise/sports & physical job or 2x training)</option>
+        </select>
+      </div>
+      <button onclick = "CalorieCalculator()" type="button" class="btn btn-default" >Submit</button>
+      <div id="results" class="pt-4">
+              <h5>Total Calories</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="number" class="form-control" id="total-calories" disabled>
+                </div>
+              </div>                       
+            </div>
+  </form>
+  <script>
+    //This is the calculator for how many calories is in maintainance
+//We are using the Mifflin- St Jeor Equation for this
+//This information was found on https://www.calculator.net/calorie-calculator.html
+
+function CalorieCalculator(){
+  const age = parseInt(document.getElementById("age").value);
+  const height = parseInt(document.getElementById("height").value) * 2.54;
+  const weight = parseInt(document.getElementById("weight").value) / 2.2;
+  const gender = parseInt(document.getElementById("gender").value);
+  const intensity = parseInt(document.getElementById("intensity").value);
+  if((gender === 1) && (intensity === 1)){
+    document.getElementById("total-calories").value = ((10 * weight) + (6.25 * height) - (5* age) + 5) * 1.2;
+  }else if(gender === 1 && intensity === 2){
+    document.getElementById("total-calories").value = ((10 * weight) + (6.25 * height) - (5* age) + 5) * 1.35;
+  }else if(gender === 1 && intensity === 3){
+    document.getElementById("total-calories").value = ((10 * weight) + (6.25 * height) - (5* age) + 5) * 1.465;
+  }else if(gender === 1 && intensity === 4){
+    document.getElementById("total-calories").value = ((10 * weight) + (6.25 * height) - (5* age) + 5) * 1.62;
+  }else if(gender === 1 && intensity === 5){
+    document.getElementById("total-calories").value = ((10 * weight) + (6.25 * height) - (5* age) + 5) * 1.84;
+  }else if(gender === 2 && intensity === 1){
+    document.getElementById("total-calories").value = ((10 * weight) + (6.25 * height) - (5* age) - 161) * 1.2;
+  }else if(gender === 2 && intensity === 2){
+    document.getElementById("total-calories").value = ((10 * weight) + (6.25 * height) - (5* age) - 161) * 1.35;
+  }else if(gender === 2 && intensity === 3){
+    document.getElementById("total-calories").value = ((10 * weight) + (6.25 * height) - (5* age) - 161) * 1.465;
+  }else if(gender === 2 && intensity === 4){
+    document.getElementById("total-calories").value = ((10 * weight) + (6.25 * height) - (5* age) - 161) * 1.62;
+  }else if(gender === 2 && intensity === 5){
+    document.getElementById("total-calories").value = ((10 * weight) + (6.25 * height) - (5* age) - 161) * 1.84;
+  }
+}
+    </script>
+    </body>
+
+    <footer>
+
+    </footer>
